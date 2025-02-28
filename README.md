@@ -19,6 +19,12 @@ for i in $(seq -w 1 75); do
   sudo cmsRemoveSubmissions -c 8 -u S$i
 done
 
-``` 
+```
+## 可以改用以下每次執行自動輸出Y  
+```
+yes | for i in $(seq -w 1 75); do
+  sudo cmsRemoveSubmissions -c 8 -u S$i
+done
+```
 ![image](https://github.com/user-attachments/assets/c0158a8d-1f17-43fd-8908-6cd4d5f149c8)
 
